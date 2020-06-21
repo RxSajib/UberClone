@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:background="#EEF8F0"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_below="@+id/CircleImageID"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="45sp"
+                android:textColor="#00BCD4"
+                android:fontFamily="cursive"
+                android:text="Pataio Me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <ImageView
+                android:layout_margin="70dp"
+                android:src="@drawable/uber_background"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Firsttext"
+                android:textColor="#359351"
+                android:text="Welcome To Pataio Me"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="wrap_content"
+                android:textSize="22sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/FindingtextID"
+                android:layout_below="@+id/Firsttext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="17dp"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="Choose your location to start \nfinding cars near to you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <RelativeLayout
+                android:layout_below="@+id/FindingtextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/DriverButtonID"
+                        android:background="@drawable/driver_button_design"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_height="45dp">
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:src="@drawable/car_whales"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="28dp">
+                        </ImageView>
+
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textColor="#FFFFFF"
+                            android:text="I Am Driver"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="17sp"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/UserbuttonID"
+                        android:background="@drawable/user_nutton_design"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/DriverButtonID"
+                        android:layout_marginRight="45dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="45dp"
+                        android:layout_height="45dp">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:textColor="#494949"
+                            android:text="I Am User"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true"
+                            android:fontFamily="sans-serif-condensed-medium"
+                            android:layout_width="wrap_content"
+                            android:textSize="17sp"
+                            android:layout_height="wrap_content">
+                        </com.google.android.material.textview.MaterialTextView>
+
+
+                        <ImageView
+                            android:layout_width="28dp"
+                            android:src="@drawable/user"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"
+                            android:layout_height="28dp">
+                        </ImageView>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

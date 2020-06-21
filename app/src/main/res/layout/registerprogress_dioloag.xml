@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/progrebbbar_background"
+    android:padding="15dp">
+
+
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/progressimageID"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/progresimage"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteY="0dp">
+    </pl.droidsonroids.gif.GifImageView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/waittexID"
+        android:layout_below="@+id/progressimageID"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18sp"
+        android:text="Please Wait ..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_below="@+id/waittexID"
+        android:layout_marginTop="10dp"
+        android:textColor="#5E5E5E"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="14sp"
+        android:text="Please wait for a moment we are creating acccount.\nThanks for using our application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+</RelativeLayout>
